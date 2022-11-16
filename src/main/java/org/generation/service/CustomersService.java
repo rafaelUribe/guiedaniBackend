@@ -6,7 +6,7 @@ import org.generation.entity.Customers;
 import org.generation.repository.*;
 
 @Service
-public class CostumersService {
+public class CustomersService {
 	@Autowired
 	ICustomersRepository iCustomersRepository;
 	
@@ -15,8 +15,8 @@ public class CostumersService {
 		return iCustomersRepository.findAll();
 	}
 	
-	public void saveCustomer(Customers customer) {
-		iCustomersRepository.save(customer);
+	public Customers saveCustomer(Customers customer) {
+		return iCustomersRepository.save(customer);
 	}
 
 }

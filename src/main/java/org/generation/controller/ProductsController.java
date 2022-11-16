@@ -20,7 +20,7 @@ public class ProductsController {
   ProductsService productsService;
 
 
-  @PostMapping(path="/add") 
+  @PostMapping
   @ResponseBody
   public ResponseEntity<?> addNewProduct(
 		 @RequestParam String name,
@@ -59,7 +59,7 @@ public class ProductsController {
   }
 
 	  
-  @GetMapping(path="/all")
+  @GetMapping
   public @ResponseBody Iterable<Products> getAllProducts() {
     // This returns a JSON or XML with the users
     return productsService.getAllProducts();

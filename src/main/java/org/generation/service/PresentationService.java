@@ -15,7 +15,7 @@ public class PresentationService  {
 		return iPresentationRepository.findAll();
 	}
 	
-	public void savePresentation(Presentation presentation) {
-		iPresentationRepository.save(presentation);
+	public Presentation savePresentation(Presentation presentation) {
+		return iPresentationRepository.save(presentation);
 	}
 }
