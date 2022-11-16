@@ -24,7 +24,7 @@ public class OriginController {
 	@Autowired
 	OriginService originService;
 	
-	@PostMapping(path="/add") 
+	@PostMapping 
 	@ResponseBody
 	public ResponseEntity<?> addNewOrigin(@RequestParam String name) {
 		try {
@@ -37,7 +37,7 @@ public class OriginController {
 		  
 	}
 	
-	@GetMapping(path="/all")
+	@GetMapping
 	  public @ResponseBody Iterable<Origin> getAllProducts() {
 	    // This returns a JSON or XML with the users
 	    return originService.getAllOrigin();

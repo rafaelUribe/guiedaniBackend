@@ -15,8 +15,8 @@ public class RoastService {
 		return iRoastRepository.findAll();
 	}
 	
-	public void saveRoast(Roast roast) {
-		iRoastRepository.save(roast);
+	public Roast saveRoast(Roast roast) {
+		return iRoastRepository.save(roast);
 	}
 	
 }
