@@ -17,13 +17,13 @@ public class Products {
 	  private Integer id_product;
 	  private String name;
 	  private Double price;
-	  @JsonIgnore
+	  
 	  private String img_1;
-	  @JsonIgnore
+	  
 	  private String img_2;
-	  @JsonIgnore
+	  
 	  private String img_3;
-	  @JsonIgnore
+	  
 	  private String img_4;
 	  private String description;
 	  @ManyToOne
